@@ -12,11 +12,11 @@ This project aims to identify the main topics behind the negative reviews of Bri
 
 Dataset
 
-The dataset for this project was obtained by scraping customer reviews for British Airways from the Airline Quality website. We collected reviews from January 2020 to May 2021, resulting in a dataset of approximately 10,000 reviews.
+The dataset for this project was obtained by scraping customer reviews for British Airways from the Airline Quality website. We collected reviews  resulting in a dataset of approximately 10,000 reviews.
 
 To label the reviews as positive or negative, we used the Hugging Face sentiment predictor. This is a pre-trained NLP model that can predict the sentiment of a text as either positive or negative. We used this model to label the reviews as positive or negative based on the predicted sentiment score.
 
-After labeling the reviews, we found that approximately 30% of them were negative. We then used topic modeling techniques to identify the main topics for the negative reviews. For this, we used the BERTopic package, which is an extension of the Latent Dirichlet Allocation (LDA) algorithm that uses BERT embeddings to represent the documents.
+After labeling the reviews, we found that approximately 74% of them were negative. We then used topic modeling techniques to identify the main topics for the negative reviews. For this, we used the BERTopic package, which is an extension of the Latent Dirichlet Allocation (LDA) algorithm that uses BERT embeddings to represent the documents.
 
 ### Libraries Used
 
