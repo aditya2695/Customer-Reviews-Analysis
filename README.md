@@ -31,7 +31,9 @@ After labeling the reviews, we found that approximately 30% of them were negativ
 
 <h3>Sentiment Distribution of British Airways Customer Reviews</h3>
 
-<img src="images/frequencies.png" width="600">
+<img src="images/sentiments.png" width="600">
+
+<h3>Frequency distribution of the different words </h3>
 
 <img src="images/frequencies.png" width="600">
 
