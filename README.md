@@ -10,7 +10,7 @@ In this project, we propose to use Latent Dirichlet Allocation (LDA) based topic
 ### Dataset
 
 ### EDA
-
+<img src="images/frequencies.png" width="600">
 
 ### Modelling
 
