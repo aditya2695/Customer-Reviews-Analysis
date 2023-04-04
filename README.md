@@ -3,15 +3,41 @@
 ### Introduction
 <p>
 
-In this project, we propose to use Latent Dirichlet Allocation (LDA) based topic modeling and sentiment analysis to gain insights from customer reviews of an airline. Airline customer reviews provide valuable feedback on various aspects of the customer's experience, such as the quality of service, comfort, and punctuality. However, these reviews can be unstructured and difficult to analyze manually. By applying LDA-based topic modeling, we aim to identify key themes and topics in the reviews and understand the overall sentiment of the customers towards the airline. By combining topic modeling with sentiment analysis, we aim to gain a deeper understanding of customer perceptions and identify areas where the airline can improve. This project will provide valuable insights for the airline to enhance the customer experience and improve their reputation in the market.
+This project aims to identify the main topics behind the negative reviews of British Airways using webscraping, sentiment analysis, and topic modeling techniques. We have used Python programming language to extract customer reviews of British Airways from the Airline Quality website using web scraping techniques. Then we have performed sentiment analysis on these reviews to identify the negative ones. Finally, we have used BERTopic library to cluster these negative reviews into different topics.
+
 
 </p>
 
 ### Dataset
 
+Dataset
+
+The dataset for this project was obtained by scraping customer reviews for British Airways from the Airline Quality website. We collected reviews from January 2020 to May 2021, resulting in a dataset of approximately 10,000 reviews.
+
+To label the reviews as positive or negative, we used the Hugging Face sentiment predictor. This is a pre-trained NLP model that can predict the sentiment of a text as either positive or negative. We used this model to label the reviews as positive or negative based on the predicted sentiment score.
+
+After labeling the reviews, we found that approximately 30% of them were negative. We then used topic modeling techniques to identify the main topics for the negative reviews. For this, we used the BERTopic package, which is an extension of the Latent Dirichlet Allocation (LDA) algorithm that uses BERT embeddings to represent the documents.
+
+### Libraries Used
+
+    BeautifulSoup4: to extract data from HTML and XML files
+    Pandas: to work with data in a tabular form
+    NLTK: to perform natural language processing tasks such as tokenization and stopword removal
+    TextBlob: to perform sentiment analysis on the reviews
+    BERTopic: to perform topic modeling on the negative reviews
+    Matplotlib and Seaborn: to visualize the results
+
 ### EDA
+
+<h3>Sentiment Distribution of British Airways Customer Reviews</h3>
+
+<img src="images/frequencies.png" width="600">
+
 <img src="images/frequencies.png" width="600">
 
 ### Modelling
 
 
+Conclusion
+
+This project has shown how webscraping, sentiment analysis, and topic modeling can be used to extract insights from customer reviews. By applying these techniques to negative reviews of British Airways, we were able to identify the main topics behind the negative feedback. These insights can be used by the airline to improve its customer service and overall customer experience.
